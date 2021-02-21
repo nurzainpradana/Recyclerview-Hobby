@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">RecyclerView Hobi</string>
+    <string name="hobby">Hobby</string>
+    <string name="tes">Test</string>
 </resources>
