@@ -4,6 +4,7 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.zainpradana.belajarkotlin.recyclerviewhobi.Extension.Companion.showToastShort
 
@@ -33,7 +34,7 @@ class HobbyAdapter(private val context: Context, private val hobby: List<Model>)
         }
 
         fun setData(data: Model, position: Int) {
-            itemView.tv_hobby.text = data.title
+            itemView.findViewById<TextView>(R.id.tvHobby).text = data.title
             this.dataDummy = data
             this.onClick = position
         }
